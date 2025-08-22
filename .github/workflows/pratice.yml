@@ -13,6 +13,6 @@ jobs:
           run: ls 
           
         - name: vie files
-          run: cat README.md
+          run: ls -ltr
           
           
