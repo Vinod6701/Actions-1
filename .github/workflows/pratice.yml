@@ -12,7 +12,7 @@ jobs:
         - name: hello world
           run: |
             echo "estam vachindi rayi"  
-            ls ltra
+            ls -ltra
             cat README.md
 
         - name: Generate ASCII 
