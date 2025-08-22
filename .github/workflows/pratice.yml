@@ -15,7 +15,7 @@ jobs:
         - name: list files  
           run: ls 
           
-        - name: vie files
-          run: ls -ltr
+        - name: view files
+          run: cat README.md
 
           
