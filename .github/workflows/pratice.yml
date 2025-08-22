@@ -6,6 +6,9 @@ jobs:
     firstjob:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout
+          uses: actions/checkout@v4  
+
         - name: hello world
           run: echo "estam vachindi rayi"  
 
@@ -14,5 +17,5 @@ jobs:
           
         - name: vie files
           run: ls -ltr
-          
+
           
