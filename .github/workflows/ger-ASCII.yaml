@@ -3,23 +3,17 @@ name: Generata ASCII
 on: push
 
 jobs:
-    ascii_job:
+    build_job_1:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
           uses: actions/checkout@v4
 
-        - name: install cowsay
-          run: sudo apt-get install cowsay -y
-
-        - name: Execute cosway CMD
-          run: cowsay -f dragon "Run for cover, I am a Dragon....RAWR" >> dragon.txt
-
-        - name: Test file
-          run: grep -i "dragon" dragon.txt
-
-        - name: read file
-          run: cat dragon.txt
-
         - name: list repo
           run: ls -ltra
+
+        - name: executing shell scripts
+          run: ./ascii-script.sh
+
+       
+        
