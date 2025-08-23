@@ -3,7 +3,7 @@ name: Generata ASCII
 on: push
 
 jobs:
-    build_job_1:
+    ascii_job:
         runs-on: ubuntu-latest
         steps:
         - name: checkout repo
